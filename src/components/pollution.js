@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Header from './header'
+import Content from './pollution/content'
 
-const Pollution = (props) => (
-  <div className="pollution">
-  	<Header />
-  </div>
-)
+class Pollution extends Component {
+
+	render () {
+		return (
+		  <section className="pollution">
+		  	<Header />
+		  	<Content />
+		  </section>
+		);
+	}
+}
 
 export default Pollution

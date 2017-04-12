@@ -6,3 +6,7 @@ svg[class^='icon-'] {
 .icon-search {
   @include sizes(26px);
 }
+
+.icon-aqi {
+  @include sizes(20px);
+}

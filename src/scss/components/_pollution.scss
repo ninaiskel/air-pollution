@@ -1,4 +1,8 @@
 .pollution {
 	@include gradient(get-color('good'), get-color('good-dark'));
 	color: get-color('text');
+
+	@include breakpoint('small-big') {
+		height: 100vh;
+	}
 }
