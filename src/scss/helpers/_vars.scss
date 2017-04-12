@@ -1,0 +1,54 @@
+$colors: (
+  'base'    			: #EBEFF2,
+  'border'  			: #979797,
+  'text'    			: #fff,
+  'text-dark' 		: #8B485F,
+  'text-light' 		: #8C8A8A,
+
+  'good'					: #66D690,
+  'good-dark'			: #449E96,
+  'moderate'			: #F3CD55,
+  'moderate-dark'	: #D47030,
+  'unhealthy'			: #EA835A,
+  'unhealthy-dark': #BA3F27,
+  'bad'						: #CB625A,
+  'bad-dark'			: #621625,
+	'danger'				:	#410F54,
+	'danger-dark'		: #13062C
+) !default;
+
+$paths: (
+  'svg' : '/svgs/',
+  'img' : '/images/'
+) !default;
+
+$fonts: (
+  'default'        : Work Sans,
+  'optional'       : sans-serif,
+  'big-size'       : 20px,
+  'default-size'   : 18px,
+  'small-size'     : 16px,
+  'default-weight' : 400,
+  'light-weight'   : 300,
+ 	'medium-weight'  : 500,
+  'big-weight'     : 700
+) !default;
+
+$miniscss-color-map-name: $colors;
+$miniscss-path-map-name: $paths;
+$miniscss-font-map-name: $fonts;
+
+$new-breakpoints : (
+'small-dekstop'         : "(min-width: 961px) and (max-width: 1300px)",
+'small-big' 						: "(min-width: 240px) and (max-width: 820px)"
+) !default;
+
+$breakpoints : map-merge($breakpoints, $new-breakpoints);
+
+$transition: .3s !default;
+
+//mixins
+@mixin gradient($from, $to) {
+  background: linear-gradient($from, $to);
+  background-color: $from;
+}

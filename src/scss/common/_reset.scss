@@ -1,0 +1,50 @@
+html,
+body,
+input,
+textarea,
+button {
+	font-family: #{get-font('default'), get-font('optional')};
+	font-weight: get-font('default-weight');
+
+	@include breakpoint('large') {
+		font-size: get-font('default-size');
+	}
+
+	@include breakpoint('>=small<=medium') {
+		font-size: get-font('small-size');
+	}
+
+}
+
+
+h1, h2, h3 {
+	font-weight: get-font('big-weight');
+}
+
+button,
+input[type="text"], input[type="search"], input[type="email"], input[type="password"],
+select,
+textarea {
+
+	&:focus {
+		outline: 0;
+		outline-color: transparent;
+		outline-style: none;
+	}
+
+}
+
+button, a {
+
+	&:hover {
+		text-decoration: none;
+	}
+
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+}

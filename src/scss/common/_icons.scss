@@ -1,0 +1,8 @@
+svg[class^='icon-'] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-search {
+  @include sizes(26px);
+}
