@@ -9,7 +9,7 @@ class Header extends Component {
 		return (
 			<div className="header">
 				<div className="header-logo">Air Pollution</div>
-				<div className="search">
+				<div className="header-search">
 					<button onClick={ () => console.log('open search form') }>
           	<Icon name="icon-search" />
         	</button>
