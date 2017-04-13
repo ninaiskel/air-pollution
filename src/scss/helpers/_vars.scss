@@ -40,7 +40,8 @@ $miniscss-font-map-name: $fonts;
 
 $new-breakpoints : (
 'small-dekstop'         : "(min-width: 961px) and (max-width: 1300px)",
-'small-big' 						: "(min-width: 240px) and (max-width: 820px)"
+'small-big' 						: "(min-width: 240px) and (max-width: 820px)",
+'small-small'             : "(min-width: 240px) and (max-width: 420px)"
 ) !default;
 
 $breakpoints : map-merge($breakpoints, $new-breakpoints);

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import Icon from '../icon'
+import Icon from '../ui/icon'
+import Button from '../ui/buttons'
 import Image from './image'
 
 class Content extends Component {
@@ -13,8 +14,13 @@ class Content extends Component {
 		  		<div className="col col-full">
 		  			<div className="pollution-content-data" >
 							<div className="information">
-			  				<p className="information-city">Madrid</p>
-			  				<p className="information-date">18.04.2017</p>
+			  				<div className="information-wrap">
+			  					<p className="information-city">Madrid</p>
+			  					<p className="information-date">18.04.2017</p>
+			  				</div>
+			  				<div className="information-button">
+			  					<Button />
+			  				</div>
 			  			</div>
 							<div className="air-quality">
 			  				<div className="air-quality-aqi">

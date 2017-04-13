@@ -28,8 +28,12 @@
 				height: 240px;
 			}
 
-			@include breakpoint('small-big') {
+			@include breakpoint('small') {
 				height: 200px;
+			}
+
+			@include breakpoint('small-small') {
+				height: 140px;
 			}
 		}
 	}	

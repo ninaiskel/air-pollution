@@ -73,21 +73,6 @@ button {
   cursor: pointer;
   padding: 0; }
 
-svg[class^='icon-'] {
-  display: inline-block; }
-
-.icon-search {
-  height: 26px;
-  width: 26px; }
-  @media (min-width: 240px) and (max-width: 820px) {
-    .icon-search {
-      height: 20px;
-      width: 20px; } }
-
-.icon-aqi {
-  width: 20px;
-  height: 15px; }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -128,6 +113,32 @@ svg[class^='icon-'] {
   flex-basis: 64%;
   margin-left: 1%;
   margin-right: 1%; }
+
+svg[class^='icon-'] {
+  display: inline-block; }
+
+.icon-search {
+  height: 26px;
+  width: 26px; }
+  @media (min-width: 240px) and (max-width: 820px) {
+    .icon-search {
+      height: 20px;
+      width: 20px; } }
+
+.icon-aqi {
+  width: 20px;
+  height: 15px; }
+
+.button {
+  border-radius: 100px;
+  border: 1px solid white;
+  color: white;
+  font-size: 0.8em;
+  padding: 8px;
+  transition: 0.3s; }
+  .button:hover {
+    background: white;
+    color: #8B485F; }
 
 .header {
   align-items: center;
@@ -172,7 +183,10 @@ svg[class^='icon-'] {
         height: calc(100vh - 50px); } }
 
 .information {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .information-date {
     font-weight: 300;
     font-size: 18px; }
@@ -245,9 +259,12 @@ svg[class^='icon-'] {
       .pollution-img-good-mobile {
         display: block;
         height: 240px; } }
-    @media (min-width: 240px) and (max-width: 820px) {
+    @media (min-width: 240px) and (max-width: 599px) {
       .pollution-img-good-mobile {
         height: 200px; } }
+    @media (min-width: 240px) and (max-width: 420px) {
+      .pollution-img-good-mobile {
+        height: 140px; } }
 
 .footer {
   background: #EBEFF2;
