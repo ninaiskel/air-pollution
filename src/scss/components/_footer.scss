@@ -1,0 +1,16 @@
+.footer {
+	background: get-color('base');
+	padding: 10px;
+	color: get-color('text-light');
+	font-size: 0.6em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		color:get-color('good-dark');
+	}
+	p{
+		margin: 0 4px;
+	}
+}

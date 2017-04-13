@@ -249,4 +249,17 @@ svg[class^='icon-'] {
       .pollution-img-good-mobile {
         height: 200px; } }
 
+.footer {
+  background: #EBEFF2;
+  padding: 10px;
+  color: #8C8A8A;
+  font-size: 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer a {
+    color: #449E96; }
+  .footer p {
+    margin: 0 4px; }
+
 /*# sourceMappingURL=App.css.map */

@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Header from './header'
 import Content from './pollution/content'
 
+
 class Pollution extends Component {
 
 	render () {
