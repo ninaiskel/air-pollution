@@ -4,7 +4,6 @@
   "private": true,
   "devDependencies": {
     "mini.scss": "^1.5.0",
-    "node-sass": "^4.5.2",
     "react-scripts": "0.9.5"
   },
   "dependencies": {

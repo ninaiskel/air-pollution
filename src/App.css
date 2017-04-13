@@ -197,4 +197,8 @@ svg[class^='icon-'] {
       .air-quality-scale h1 {
         font-size: 2.2em; } }
 
+.pollution-img-good {
+  height: 250px;
+  width: 100%; }
+
 /*# sourceMappingURL=App.css.map */
