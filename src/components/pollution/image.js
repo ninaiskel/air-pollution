@@ -6,12 +6,9 @@ class Image extends Component {
 	render () {
 		return (
 		  <div className="polution-img" >
-		  	<div className="container">
-		  		<div className="col col-full">
-		  			<Icon name="pollution-img-good" className=""/>
-		  		</div>
-		  	</div>
-		  </div>
+				<Icon name="pollution-img-good"/>
+				<Icon name="pollution-img-good-mobile"/>
+			</div>
 		);
 	}
 }

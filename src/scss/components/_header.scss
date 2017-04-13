@@ -2,12 +2,20 @@
 	align-items: center;
 	display: flex;
 	justify-content: space-between; 
-	padding: 20px;
+	padding: 20px 20px 0;
+
+	@include breakpoint('small-big') {
+		padding: 10px 10px 0;
+	}
 
 	&-logo {
 		font-size: get-font('big-size');
 		font-weight: get-font('medium-weight');
 		text-align: center;
+		
+		@include breakpoint('small-big') {
+			font-size: get-font('default-size');
+		}
 	}
 
 	&-search {

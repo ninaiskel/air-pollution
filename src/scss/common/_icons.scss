@@ -1,12 +1,16 @@
 svg[class^='icon-'] {
   display: inline-block;
-  vertical-align: middle;
 }
 
 .icon-search {
   @include sizes(26px);
+
+  @include breakpoint('small-big') {
+  	@include sizes(20px);
+  }
 }
 
 .icon-aqi {
-  @include sizes(20px);
+  width: 20px;
+  height: 15px;
 }

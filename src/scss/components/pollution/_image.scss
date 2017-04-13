@@ -1,6 +1,36 @@
 .pollution-img {
 	&-good {
-		height: 250px;
-		width: 100%;	
-	}
+		width: 100%;
+		height: 245px;
+		position: relative;
+    bottom: -8px;
+
+		@include breakpoint('small-dekstop') {
+			height: 220px;
+			 bottom: -12px;
+		}
+
+		@include breakpoint('medium') {
+			height: 180px;
+		}
+
+		@include breakpoint('small-big') {
+			display: none;
+		}
+
+		&-mobile {
+			display: none;
+			margin: 0 auto;
+			width: 100%;
+
+			@include breakpoint('small-big') {
+				display: block;
+				height: 240px;
+			}
+
+			@include breakpoint('small-big') {
+				height: 200px;
+			}
+		}
+	}	
 }

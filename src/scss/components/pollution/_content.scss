@@ -1,12 +1,26 @@
 .pollution-content {
-	padding: 40px 0;
+	display: flex;
+	margin-top: 20px;
 
 	@include breakpoint('small-big') {
-		padding: 20px 0;
+		margin-top: 10px;
+	}
+
+	&-data {
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - 85px);
+		justify-content: space-between;
+
+		@include breakpoint('small-big') {
+			height: calc(100vh - 50px);
+		}
 	}
 }
 
 .information {
+	margin-top: 20px;
+
 	&-date {
 		font-weight: get-font('light-weight');
 		font-size: get-font('small-size');
@@ -22,10 +36,11 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 80%;
-	margin: 80px auto;
+	margin: 0 auto;
 
 	@include breakpoint('small') {
-		flex-direction: column;
+		display: block;
+		text-align: center;
 		margin: 60px auto 0;
 	}
 
@@ -34,8 +49,8 @@
 		align-items: flex-end;
 
 		@include breakpoint('small') {
-			align-items: center;
-			flex-direction: column; 
+			display: block;
+			text-align: center;
 		}
 
 		h1 {
@@ -51,6 +66,11 @@
 			font-size: 0.7em;
 			text-transform: uppercase;
 			font-weight: get-font('light-weight');
+
+			@include breakpoint('small') {
+				margin-top: 6px;
+				display: block;
+			}
 		}
 	}
 
