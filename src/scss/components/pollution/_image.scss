@@ -3,15 +3,16 @@
 		width: 100%;
 		height: 245px;
 		position: relative;
-    bottom: -8px;
+    bottom: 0;
+    vertical-align: bottom;
 
 		@include breakpoint('small-dekstop') {
-			height: 220px;
-			 bottom: -12px;
+			height: 200px;
+			 bottom: 0px;
 		}
 
 		@include breakpoint('medium') {
-			height: 180px;
+			height: 160px;
 		}
 
 		@include breakpoint('small-big') {
@@ -29,7 +30,7 @@
 			}
 
 			@include breakpoint('small') {
-				height: 200px;
+				height: 180px;
 			}
 
 			@include breakpoint('small-small') {

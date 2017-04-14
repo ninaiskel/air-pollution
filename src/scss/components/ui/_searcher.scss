@@ -1,0 +1,35 @@
+.searcher {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	flex-direction: column;
+
+	&-input {
+		background: transparent;
+		border: 0;
+		border-bottom: 4px solid get-color('border');
+		padding: 20px 0;
+		width: 80%;
+		font-size: 3em;
+		color: get-color('text-light');
+		appearance: none;
+
+		@include breakpoint('small-big') {
+			width: 90%;
+			font-size: 1.6em;
+		}
+	}
+
+	p {
+		width: 80%;
+		margin-top: 20px;
+		color: get-color('text-light');
+		font-size: get-font('size-small');
+
+		@include breakpoint('small-big') {
+			width: 90%;
+			font-size: 0.8em;
+		}
+	}
+}

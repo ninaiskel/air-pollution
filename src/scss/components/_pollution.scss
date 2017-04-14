@@ -1,5 +1,4 @@
 .pollution {
-	@include gradient(get-color('good'), get-color('good-dark'));
 	color: get-color('text');
 	height: 100%;
 	position: relative;

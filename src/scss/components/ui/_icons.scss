@@ -14,3 +14,7 @@ svg[class^='icon-'] {
   width: 20px;
   height: 15px;
 }
+
+.icon-close {
+	@include sizes(26px);
+}

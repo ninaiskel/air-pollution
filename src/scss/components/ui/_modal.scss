@@ -1,0 +1,28 @@
+.modal {
+	background: get-color('base');
+	height: 95vh;
+	margin: 20px auto 0;
+	outline: 0;
+	padding: 20px;
+	width: 97%;
+
+	@include breakpoint('small-big') {
+		height: 100vh;
+		margin: 0 auto 0;
+		width: 100%;
+	}
+}
+
+.button-close {
+	float: right;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+

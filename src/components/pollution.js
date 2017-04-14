@@ -8,7 +8,7 @@ class Pollution extends Component {
 
 	render () {
 		return (
-		  <section className="pollution">
+		  <section className="pollution good">
 		  	<Header />
 		  	<Content />
 		  </section>

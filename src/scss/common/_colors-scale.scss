@@ -1,0 +1,23 @@
+.good {
+	@include gradient(get-color('good'), get-color('good-dark'));
+}
+
+.moderate {
+	@include gradient(get-color('moderate'), get-color('moderate-dark'));
+}
+
+.no-bad-no-good {
+	@include gradient(get-color('no-bad-no-good'), get-color('no-bad-no-good-dark'));
+}
+
+.unhealthy {
+	@include gradient(get-color('unhealthy'), get-color('unhealthy-dark'));
+}
+
+.bad {
+	@include gradient(get-color('bad'), get-color('bad-dark'));
+}
+
+.danger {
+	@include gradient(get-color('danger'), get-color('danger-dark'));
+}
