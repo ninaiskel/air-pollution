@@ -34,7 +34,7 @@ class Button extends Component {
 					overlayClassName="overlay"
 					isOpen={this.state.showModal}
 					contentLabel="Search modal"
-					className="modal">
+					className="modal modal-scale">
 					<button 
 						className="button-close"
 						onClick={this.handleCloseModal}>

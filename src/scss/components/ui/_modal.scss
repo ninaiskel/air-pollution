@@ -14,7 +14,8 @@
 }
 
 .button-close {
-	float: right;
+	text-align: right;
+	width: 100%;
 }
 
 .overlay {
@@ -23,6 +24,22 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+
+	@include breakpoint('small-big') {
+		position: absolute;
+	}
+}
+
+.modal-scale {
+	@include breakpoint('small-big') {
+		padding: 0;
+	}
+
+	.button-close {
+		margin-top: 10px;
+		padding-right: 10px;
+	}
+
 }
 
 
