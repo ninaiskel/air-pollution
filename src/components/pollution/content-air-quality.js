@@ -5,16 +5,24 @@ import Icon from '../ui/icon'
 
 class AirQuality extends Component {
 
+	constructor(props) {
+    super(props);
+    this.state = {
+      aqi: "20",
+      scale: 'good'
+    };
+  }
+  
 	render () {
-		// const { city, date } = this.props
+		const { aqi, scale } = this.state
 		return (
 			<div className="air-quality">
 				<div className="air-quality-aqi">
-					<h1>29</h1>
+					<h1>{ aqi }</h1>
 					<span><Icon name="icon-aqi" /> aqi</span>
 				</div>
 				<div className="air-quality-scale">
-					<h1>good</h1>
+					<h1>{ scale }</h1>
 				</div>
 			</div>
 		);

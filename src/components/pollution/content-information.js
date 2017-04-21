@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import Button from '../ui/buttons'
-import Icon from '../ui/icon'
 
 class Information extends Component {
 
