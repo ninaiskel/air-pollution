@@ -24,13 +24,8 @@
 	justify-content: space-between;
 	align-items: center;
 
-	&-date {
+	&-city {
 		font-weight: get-font('light-weight');
-		font-size: get-font('small-size');
-
-		@include breakpoint('small-big') {
-			font-size: 0.8em;
-		}
 	}
 }
 

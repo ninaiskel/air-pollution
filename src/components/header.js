@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Icon from './ui/icon'
+import Icon from './ui/icon';
 import ReactModal from 'react-modal';
 import Searcher from './ui/searcher';
 import Loading from './ui/loading';
@@ -36,6 +36,7 @@ class Header extends Component {
     //
     //
     this.setState({ showModal : false })
+    this.props.searchIsTrue()
   }
 
 	render () {
@@ -61,7 +62,6 @@ class Header extends Component {
 
             <Searcher onSubmit={ this.onSubmit } />
         	</ReactModal>
-
 				</div>
 			</div>
 		);

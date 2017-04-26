@@ -1,0 +1,14 @@
+.wrap-find {
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 25%;
+
+  h1 {
+  	margin-top: 40px;
+  	font-size: get-font('big-size');
+  }
+}
+

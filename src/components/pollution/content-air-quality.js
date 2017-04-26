@@ -11,7 +11,9 @@ import Icon from '../ui/icon'
 // 	{ range: "300+", scale: "Dangerous" }
 // ];
 const dataQuality = {
-	range: "50", scale: "good" 
+	range: "50", 
+	scale: "good",
+	city: "madrid",
 }
 
 class AirQuality extends Component {
