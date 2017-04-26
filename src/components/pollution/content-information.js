@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
-import Button from '../ui/buttons'
+import ButtonModal from '../ui/button-modal'
+
+const dataQuality = {
+	range: "50", scale: "good" 
+}
 
 class Information extends Component {
 
@@ -12,7 +16,7 @@ class Information extends Component {
 					<p className="information-date">18.04.2017</p>
 				</div>
 				<div className="information-button">
-					<Button />
+					<ButtonModal />
 				</div>
 			</div>
 		);

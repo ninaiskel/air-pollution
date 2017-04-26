@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 
-import Icon from '../ui/icon'
 class Image extends Component {
 
 	render () {
 		return (
-		  <div className="polution-img" >
-				<Icon name="pollution-img-good"/>
-				<Icon name="pollution-img-good-mobile"/>
+		  <div className="air-img" >
+				<img className="air-img-common air-img-good" src="images/good.svg" alt="good pollution"></img>
+				<img className="air-img-common-mobile air-img-good-mobile" src="images/good-mobile.svg" alt="good pollution"></img>
 			</div>
 		);
 	}

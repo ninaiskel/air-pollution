@@ -3,8 +3,9 @@ import React, { Component } from 'react'
 class Searcher extends Component {
 
 	render () {
+		const { onSubmit } = this.props
 		return (
-		  <form className="searcher">
+		  <form className="searcher" onSubmit={ onSubmit }>
 				<input 
 					className="searcher-input" 
 					type="text" 

@@ -4,7 +4,7 @@ import ReactModal from 'react-modal'
 import Icon from '../ui/icon'
 import IndexScale from '../index-scale/content'
 
-class Button extends Component {
+class ButtonModal extends Component {
 
 	constructor () {
     super();
@@ -48,4 +48,4 @@ class Button extends Component {
 	}
 }
 
-export default Button
+export default ButtonModal

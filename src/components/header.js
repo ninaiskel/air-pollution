@@ -3,16 +3,19 @@ import React, { Component } from 'react'
 import Icon from './ui/icon'
 import ReactModal from 'react-modal';
 import Searcher from './ui/searcher';
+import Loading from './ui/loading';
 
 class Header extends Component {
 	constructor () {
     super();
     this.state = {
-      showModal: false
+      showModal: false,
+      loading: false
     };
     
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
   
   handleOpenModal () {
@@ -23,6 +26,18 @@ class Header extends Component {
     this.setState({ showModal: false });
   }
 
+  onSubmit (e) {
+    e.preventDefault()
+    console.log(e.target)
+    //
+    // codigo de fetch
+    this.setState({ loading : true })
+    setTimeout( () => this.setState({ loading : false }), 3000);
+    //
+    //
+    this.setState({ showModal : false })
+  }
+
 	render () {
 		return (
 			<div className="header">
@@ -30,8 +45,8 @@ class Header extends Component {
 				<div className="header-search">
 					<button onClick={this.handleOpenModal}>
 						<Icon name="icon-search" />
-					</button>
-        		
+					</button>  
+        	{ this.state.loading && <Loading /> }
         	<ReactModal 
             overlayClassName="overlay"
            	isOpen={this.state.showModal}
@@ -44,7 +59,7 @@ class Header extends Component {
           		<Icon name="icon-close" />
           	</button>
 
-          	<Searcher />
+            <Searcher onSubmit={ this.onSubmit } />
         	</ReactModal>
 
 				</div>
