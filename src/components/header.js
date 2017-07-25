@@ -12,16 +12,16 @@ class Header extends Component {
       showModal: false,
       loading: false
     };
-    
+
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-  
+
   handleOpenModal () {
     this.setState({ showModal: true });
   }
-  
+
   handleCloseModal () {
     this.setState({ showModal: false });
   }
@@ -46,15 +46,15 @@ class Header extends Component {
 				<div className="header-search">
 					<button onClick={this.handleOpenModal}>
 						<Icon name="icon-search" />
-					</button>  
+					</button>
         	{ this.state.loading && <Loading /> }
-        	<ReactModal 
+        	<ReactModal
             overlayClassName="overlay"
            	isOpen={this.state.showModal}
            	contentLabel="Search modal"
            	className="modal">
 
-          	<button 
+          	<button
           		className="button-close"
           		onClick={this.handleCloseModal}>
           		<Icon name="icon-close" />
@@ -69,4 +69,3 @@ class Header extends Component {
 }
 
 export default Header;
-

@@ -5,8 +5,8 @@ class Footer extends Component {
 	render () {
 		return (
 		  <footer className="footer" >
-		  	<p>Api provide by <a href="#">aqicn.org</a> -</p>
-		  	<p>Made with love by <a href="#">Jess</a></p>
+		  	<p>Api provide by <a target="_blank" href="https://aqicn.org">aqicn.org</a> -</p>
+		  	<p>Made with love by <a target="_blank" href="https://ninaiskel.github.io/Web-Jess/">Jess</a></p>
 		  </footer>
 		);
 	}
